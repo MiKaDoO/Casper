@@ -13,6 +13,28 @@
         <div class="main-header-content inner">
             <h1 class="page-title">{{@blog.title}}</h1>
             <h2 class="page-description">{{@blog.description}}</h2>
+            <div>
+                <a href="https://twitter.com/MiKaDo_O" target="_blank">
+                <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-inverse fa-stack-1x"></i>
+                </span>
+                </a>
+
+                <a href="https://github.com/MiKaDoO" target="_blank">
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-inverse fa-stack-1x"></i>
+                    </span>
+                </a>
+
+                 <a href="http://www.linkedin.com/in/mickaelmetesreau" target="_blank">
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-inverse fa-stack-1x"></i>
+                    </span>
+                </a>
+            </div>
         </div>
     </div>
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
@@ -25,3 +47,9 @@
     {{> "loop"}}
 
 </main>
+
+{{#contentFor "meta"}}
+
+    <meta name="twitter:creator" content="@MiKaDo_O"/>
+
+{{/contentFor}}
